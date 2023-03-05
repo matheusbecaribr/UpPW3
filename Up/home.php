@@ -1,13 +1,14 @@
 <?php
-    session_start();
-        /*if (!isset($_SESSION['email'])) {
-            header('Location: index.php');
-            exit;
-        }*/
 
-        if (!file_exists('uploads')) {
-            mkdir('uploads', 0777, true);
-        }
+    session_start();
+        
+    $prot = $_SESSION['email'];
+
+    if(!isset($prot)){
+        header('location: index.php');
+    } else{
+    }
+
 ?>
 
 

@@ -1,3 +1,16 @@
+<?php
+
+    session_start();
+        
+    $prot = $_SESSION['email'];
+
+    if(!isset($prot)){
+        header('location: index.php');
+    } else{
+    }
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
